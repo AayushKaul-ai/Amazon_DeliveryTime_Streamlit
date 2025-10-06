@@ -43,7 +43,7 @@ input_df = pd.DataFrame([[
     'Agent_Age', 'Agent_Rating', 'Store_Latitude', 'Store_Longitude',
     'Drop_Latitude', 'Drop_Longitude', 'Distance_km',
     'Order_Hour', 'Pickup_Hour', 'Efficiency'
-]).
+])
 st.subheader("🧾 Input Summary")
 st.dataframe(input_df)
 
@@ -59,3 +59,4 @@ if st.button("🔮 Predict Delivery Time"):
 
 st.markdown("---")
 st.caption("Developed by **Aayush Kaul** | Machine Learning Delivery Prediction | Streamlit 🚀")
+
