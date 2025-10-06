@@ -9,8 +9,6 @@ model = joblib.load("best_model_compressed.pkl")
 
 st.success("✅ Model loaded successfully!")
 
-# ----------------------------------------------------------
-# Example Streamlit UI 
 
 st.title("🚚 Amazon Delivery Time Prediction App")
 st.write("Predict delivery time based on traffic, weather, and agent details.")
@@ -30,3 +28,4 @@ input_df = pd.DataFrame({
 if st.button("🔮 Predict Delivery Time"):
     prediction = model.predict(input_df)[0]
     st.success(f"🕒 Estimated Delivery Time: **{prediction:.2f} minutes**")
+
